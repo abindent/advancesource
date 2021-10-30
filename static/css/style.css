@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* MAIN CSS */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.a {
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* NAVBAR */
+
+.nav-bar {
+    background-color: #2f3136;
+    padding: 15px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.nav-bar img {
+    height: 35px;
+    float: left;
+    margin-right: 20px;
+}
+
+.menu2 {
+    margin: 0 20px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu li a:hover {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.menu-right {
+    text-align: right;
+}
+
+ul li {
+    display: inline-block;
+    margin: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 20%;
+    padding: 10px;
+    font-family: Poppins, sans-serif;
+}
+
+.col:nth-child(2).col:nth-child(3) {
+    flex-basis: 10%;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.ul2 .li2 {
+    list-style: none;
+    display: block;
+    margin-bottom: 12px;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .far {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+form button .fas {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 3%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: #000;
+    background-color: #fff;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.column {
+    float: left;
+    width: 40%;
+    margin-left: 30px;
+    margin-right: 40px;
+    padding: 40px;
+
+}
+
+.column img {
+    animation: transform 4s ease;
+    border: 2px solid white;
+    border-radius: 10000px;
+    width: 340px;
+    cursor: pointer;
+}
+
+.column img:hover {
+    transform: scale(1.03);
+}
+
+
+.column button {
+    background: transparent;
+    color: purple;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    width: 320px;
+    border: 2px solid purple;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: transform 4s ease;
+}
+
+.column button:hover {
+    transform: scale(1.03);
+}
+
+
+.column p {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(74, 80, 85);
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.h1ide {
+    font-family: Poppins, sans-serif;
+    font-size: 74px;
+    color: purple;
+}
+
+.column h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(178, 0, 223);
+    text-align: center;
+    padding: 5px 10px;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/* MAIN BODY CSS */
+.background {
+    background: rgba(19, 19, 19, 0.9) url('https://osourcegames.firebaseapp.com/Logo%20Website.png');
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+.firstsection {
+    height: 100vh;
+}
+
+.boxmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 82%;
+}
+
+.firsthalf {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.big {
+    color: rgb(114, 248, 248);
+}
+
+.text-big {
+    font-size: 37px;
+    padding: 5px;
+}
+
+.text-small {
+    font-size: 27px;
+}
+.text{
+    font-size: 48px;
+    color: rgb(49, 169, 209);
+}
+.text2{
+    font-size: 25px;
+    color: white;
+    
+}
+.btn {
+    padding: 8px 21px;
+    margin: 7px 3;
+    border: 3px solid white;
+    border-radius: 9px;
+    font-size: 14px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 6px;
+
+}
+
+.secondhalf{
+    width: 30%;
+}
+
+.secondhalf img{
+    width: 70%;
+    border: 5px solid white;
+    border-radius: 1280px;
+    display: block;
+    margin: auto;
+    background: rgba(231, 31, 31, 0.7);
+}
+.thirdhalf{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirdhalf img{
+  width: 50%;
+  border-radius: 1000px;
+  align-items: center;
+  justify-content: center;
+}
+.secright{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 81%;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.secright img{
+    width: 200px;
+}
+.para{
+    padding: 65px;
+}
+.sectiontag{
+    padding: 16px 0;
+    color: rgb(10, 151, 128);
+    font-size: 45px;
+}
+
+.sectionsubtag{
+    color: black;
+    font-size: 27px; 
+}
+.thumbnail img{
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 80px;
+}
+.secup{
+  
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 81%;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.secup img{
+    width: 200px;
+}
+
+.secleft{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 81%;
+    margin: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.secleft img{
+    width: 200px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+  }
+.button a{
+    text-decoration: none;
+    color: #fff;
+}
+.button a:hover{
+    font-size: 20px;
+}
+
+/* MEDIA QUERIES  */
+@media only screen and (max-width:700px) {
+
+    /* NAVBAR */
+    .menu2 {
+        display: block;
+    }
+
+    ul li {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /* FOOTER */
+    footer {
+        bottom: unset;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+
+    .col:nth-child(2).col:nth-child(3) {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 1283px) {
+    .buttons {
+        text-align: center;
+    }
+    .boxmain{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .secright{
+        flex-direction: column-reverse;
+    }
+    .secleft{
+        flex-direction: column-reverse;
+    }
+    .secup{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+}

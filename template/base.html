@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CUSTOME CSS-->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="https://osourcegames.firebaseapp.com/canva-big-metal-letter-v-MAAm7Bhyp1o.png" type="image/png">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/580eec0a32.js" crossorigin="anonymous"></script>
+    <title>{% block title %}{% endblock title %} | OpenSource</title>
+</head>
+<body>
+<!-- NAVBAR -->
+<div class="nav-bar">
+        <img src="https://osourcegames.firebaseapp.com/canva-big-metal-letter-v-MAAm7Bhyp1o.png">
+        <div class="menu-right">
+            <span class="menu2" onclick="navbarfunction()">☰</span>
+            <ul id="menu">
+                  <li class="li2"><a class="a" href="/">HOME</a></li>
+            <li class="li2"><a class="a" href="/about">ABOUT</a></li>
+            <li class="li2"><a class="a" href="/games" target="_blank">GAMES</a></li>
+            <li class="li2"><a class="a" href="/contact">CONTACT US</a></li>             
+            <li class="li2"><a class="a" href="/premium">PREMIUM</a></li>
+               
+            </ul>
+        </div>
+    </div>
+    <!-- CUSTOME JS -->
+    <script src="/static/js/script.js"></script>
+{% block body %}{% endblock body %}
+</body>
+</html>
