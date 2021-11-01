@@ -8,3 +8,13 @@ function navbarfunction() {
         x.style.display = "block";
     };
 }
+
+function hidealert(){
+  var alert = document.getElementById("alert")
+ 
+  alert.classList.remove("show")  
+  alert.classList.add("fade")  
+
+  alert.remove()
+  
+}

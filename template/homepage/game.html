@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% block title %}Games{% endblock title %}
+
+{% block body %}
+
+<!-- MAIN BODY -->
+<main class="background">
+    <section class="background">
+        <div class="heading">
+            <center>
+                <h1>
+                    <font color="cyan">
+                        Games
+                    </font>
+                </h1>
+            </center><br><br>
+            <center>
+                <div class="wilder">
+                    <p><b>
+                            I) Tic Tac Toe
+                        </b> </p>
+                </div>
+            </center>
+            <center><br>
+                <div class="pic"><img src="/media/Tic_tac_toe.png"></div>
+        </div>
+        </center><br>
+        <center>
+            <div class="pra">
+                <p>
+                    Tic-tac-toe, noughts and crosses, or Xs and Os is a paper-and-pencil game for two players who take
+                    turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing
+                    three of their marks in a horizontal, vertical, or diagonal row is the winner. But here you can play it with your freinds because it is multiplayer.
+                </p>
+            </div>
+        </center><br><br>
+        <center>
+            <div class="buttons"><a href="/tictactoe/start" target="blank"><button class="btn">Play now</button></a>
+                <a href="https://github.com/abindent" target="blank"><button class="btn">Get Source Code</button></a>
+            </div>
+
+            <br><br><br>
+        </center>
+    </section>
+</main>
+<br>
+
+<!-- FOOTER -->
+<footer>
+    <div class="row">
+        <div class="col">
+            <img src="https://osourcegames.firebaseapp.com/canva-big-metal-letter-v-MAAm7Bhyp1o.png" class="logo">
+            <p>OpenSource is a website of different types of Computer Games. You will get many
+                exiting and interesting games here. Hope you will like those.</p>
+        </div>
+        <div class="col" id="con">
+            <h3>ADDRESS <div class="underline"><span></span></div>
+            </h3>
+            <p>Sarat Ava</p>
+            <p>Senpara, Jalpaiguri</p>
+            <p>West Bengal, PIN 735101, India</p>
+            <p class="email-id"><a class="a" href="mailto:support@opensource.infinityfreeapp.com"
+                    target="_blank">support@opensource</a></p>
+            <h4>+91 - 9883105019</h4>
+        </div>
+        <div class="col">
+            <h3>LINKS <div class="underline"><span></span></div>
+            </h3>
+            <ul class="ul2">
+                <li class="li2"><a class="a" href="/">HOME</a></li>
+                <li class="li2"><a class="a" href="/about">ABOUT</a></li>
+                <li class="li2"><a class="a" href="/games" target="_blank">GAMES</a></li>
+                <li class="li2"><a class="a" href="/contact">CONTACT US</a></li>
+                <li class="li2"><a class="a" href="/premium">PREMIUM</a></li>
+            </ul>
+
+        </div>
+        <div class="col">
+            <h3>NEWSLETTER <div class="underline"><span></span></div>
+            </h3>
+            <form id="newsletter" action="/newsletter" method="POST">
+                <i class="far fa-envelope" aria-hidden="true"></i>
+                <input type="email" placeholder="Enter You Email Id" required="">
+                <button type="submit"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+            </form>
+            <div class="social-icons">
+                <h2
+                    style="font-size: 0.9rem;position: relative;text-align: center;display: flex;align-content: center;flex-wrap: nowrap;justify-content: space-around;align-items: baseline;">
+                    <u>SOCIALS</u></h2><br>
+                <a href="https://www.linkedin.com/in/sinchan-maitra-22a303217/s" target="_blank"><i
+                        class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://discord.io/AbindentCommunity" target="_blank"><i class="fab fa-discord"
+                        aria-hidden="true"></i></a>
+                <a href="https://github.com/Think-With-Us" target="_blank"><i class="fab fa-github"
+                        aria-hidden="true"></i></a>
+                <a href="https://in.pinterest.com/maitrababai2007/" target="_blank"><i class="fab fa-pinterest"
+                        aria-hidden="true"></i></a>
+                <a href="https://reddit.com/r/abindent/" target="_blank"><i class="fab fa-reddit"
+                        aria-hidden="true"></i></a>
+                <a href="https://twtich.tv/smduniya187357/" target="_blank"><i class="fab fa-twitch"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+    <p class="copyright">OpenSource © 2026 - All Rights Reserved</p>
+</footer>
+
+{% endblock %}

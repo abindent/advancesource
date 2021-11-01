@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+gunicorn = "*"
+whitenoise = "*"
+psycopg2 = "*"
+pillow = "*"
+dj-database-url = "*"
+django = "*"
+channels = "*"
+channels-redis = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

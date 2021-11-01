@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% block title %}Games{% endblock title %}
+
+
+{% block body %}
+
+<!-- ALERT-->
+{% if messages %}
+{% for message in messages %}
+<br>
+<div class="alert alert-{{ message.tags }} alert-dismissible show" id="alert" >
+<strong>Message : </strong> {{ message }}
+<button type="button" class="btn-close" onclick="hidealert()" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+</div>
+{% endfor %}
+{% endif %}
+<!-- MAIN BODY -->
+<center>
+<div class="form-container">
+    <form action="/contact" class="contactform" method="post">
+        {% csrf_token %}
+        <center>
+            <h1><u><strong>Contact</strong></u></h1>
+        </center>
+        <center>
+            <div class="form-id">
+            <center><input type="text" id="name" name="name" placeholder="Enter Your Name"  aria-describedby="name" required></center>
+            <i class="far fa-user"></i>
+            </div>
+
+            <div class="form-id">
+            <center><input type="email" id="email" name="email" placeholder="Enter Your Email" aria-describedby="emailHelp" required></center>
+            <i class="far fa-envelope"></i>
+        </div>
+    </center>
+    <div id="status"><p class="success">We do not share your email with anyone.</p></div>
+        <div class="form-id">
+            <center><input type="tel" id="phone" name="phone" placeholder="Enter Your Phone (With County Code)" required aria-describedby="name"></center>
+            <i class="fas fa-phone-alt"></i>
+            </div>
+          <div class="form-id">
+          <center>
+              <textarea style="margin: 0px; width: 362px; height: 150px;" placeholder="Enter Your Query Here" required name="content" id="content" cols="30" rows="8"></textarea>
+          </center>
+          </div>
+          <center><button id="subbtn" type="submit">Send</button></center> 
+        </div>
+    </form>
+</div>
+</center>
+<!-- FOOTER -->
+<br><br>
+<footer>
+    <div class="row">
+        <div class="col">
+            <img src="https://osourcegames.firebaseapp.com/canva-big-metal-letter-v-MAAm7Bhyp1o.png" class="logo">
+            <p>OpenSource is a website of different types of Computer Games. You will get many
+                exiting and interesting games here. Hope you will like those.</p>
+        </div>
+        <div class="col" id="con">
+            <h3>ADDRESS <div class="underline"><span></span></div>
+            </h3>
+            <p>Sarat Ava</p>
+            <p>Senpara, Jalpaiguri</p>
+            <p>West Bengal, PIN 735101, India</p>
+            <p class="email-id"><a class="a" href="mailto:support@opensource.infinityfreeapp.com"
+                    target="_blank">support@opensource</a></p>
+            <h4>+91 - 9883105019</h4>
+        </div>
+        <div class="col">
+            <h3>LINKS <div class="underline"><span></span></div>
+            </h3>
+            <ul class="ul2">
+                <li class="li2"><a class="a" href="/">HOME</a></li>
+                <li class="li2"><a class="a" href="/about">ABOUT</a></li>
+                <li class="li2"><a class="a" href="/games" target="_blank">GAMES</a></li>
+                <li class="li2"><a class="a" href="/contact">CONTACT US</a></li>
+                <li class="li2"><a class="a" href="/premium">PREMIUM</a></li>
+            </ul>
+
+        </div>
+        <div class="col">
+            <h3>NEWSLETTER <div class="underline"><span></span></div>
+            </h3>
+            <form id="newsletter" action="/newsletter" method="POST">
+                <i class="far fa-envelope" aria-hidden="true"></i>
+                <input type="email" placeholder="Enter You Email Id" required="">
+                <button type="submit"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+            </form>
+            <div class="social-icons">
+                <h2
+                    style="font-size: 0.9rem;position: relative;text-align: center;display: flex;align-content: center;flex-wrap: nowrap;justify-content: space-around;align-items: baseline;">
+                    <u>SOCIALS</u>
+                </h2><br>
+                <a href="https://www.linkedin.com/in/sinchan-maitra-22a303217/s" target="_blank"><i
+                        class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://discord.io/AbindentCommunity" target="_blank"><i class="fab fa-discord"
+                        aria-hidden="true"></i></a>
+                <a href="https://github.com/Think-With-Us" target="_blank"><i class="fab fa-github"
+                        aria-hidden="true"></i></a>
+                <a href="https://in.pinterest.com/maitrababai2007/" target="_blank"><i class="fab fa-pinterest"
+                        aria-hidden="true"></i></a>
+                <a href="https://reddit.com/r/abindent/" target="_blank"><i class="fab fa-reddit"
+                        aria-hidden="true"></i></a>
+                <a href="https://twtich.tv/smduniya187357/" target="_blank"><i class="fab fa-twitch"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+    <p class="copyright">OpenSource © 2026 - All Rights Reserved</p>
+</footer>
+
+
+{% endblock %}

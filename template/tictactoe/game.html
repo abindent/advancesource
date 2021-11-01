@@ -277,13 +277,13 @@
     }
 </style>
 
-<body class="bg-dark" onload="alert('Waiting For Another Player....')">
+<body class="bg-dark" onload="swal('Please Wait','Waiting For Connection....', 'warning')">
 
     <div class="full-page" id="full-page">
 
         <div class="game flex-column">
             <div class="scoreboard">
-                <div class="player1">Player 1: </div>
+                <div class="player1">Player 1:  </div>
                 <div class="player2">Player 2: </div>
             </div>
             <div class="boardcontainer">
@@ -300,8 +300,8 @@
 
                 </div>
             </div>
-            <div class="d-grid gap-2 mt-3">
-                <button id="resets" class="btn btn-primary">Reset</button>
+            <div id="reseted" style="display: none;" class="d-grid gap-2 mt-3">
+                <button id="resetbtn" style="display: none;" onclick="reload()" class="btn btn-primary">Reset</button>
             </div>
         </div>
     </div>
@@ -317,13 +317,12 @@
         var room_code = '{{room_code}}'
         var username = '{{username}}'
         var player = username.charAt(0)
-        var resetbtn = document.getElementById("resets")
-        var resetfunc = "RESET"
-        var resetfunc1 = ""
-
-
-
-
+        let resetbtn = document.getElementById("resetbtn")
+        let reseted = document.getElementById("reseted")
+          
+        function reload() {
+            window.location.reload()
+        }
 
         let socket = new WebSocket('ws://localhost:8000/ws/play/' + room_code)
 
@@ -344,6 +343,8 @@
                 if (game != "") {
                     count++;
                 }
+            resetbtn.style.display = "block";
+            reseted.style.display = "block";    
             })
 
             if (count >= 9) {
@@ -405,15 +406,8 @@
                 socket.send(JSON.stringify({
                     data
                 }))
-                resetfunc = resetfunc1
                 checkWon(value, player)
 
-                resetbtn.addEventListener('click', () => {
-                    if (resetfunc = resetfunc1) {
-                        elementArray[parseInt].innerHTML = resetfunc
-                        swal("Good Job!", "Reset was successfull", 'success')
-                    }
-                })
             }
 
             else {
