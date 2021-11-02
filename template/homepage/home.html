@@ -4,6 +4,16 @@
 
 {% block body %}
 <!-- BODY -->
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible show" id="alert" >
+<strong>Message : </strong> {{ message }}
+<button type="button" class="btn-close" onclick="hidealert()" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+</div>
+{% endfor %}
+{% endif %}
 <section class="background firstsection">
     <div class="boxmain">
 

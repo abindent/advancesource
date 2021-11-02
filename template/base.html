@@ -22,6 +22,22 @@
                   <li class="li2"><a class="a" href="/">HOME</a></li>
             <li class="li2"><a class="a" href="/about">ABOUT</a></li>
             <li class="li2"><a class="a" href="/games" >GAMES</a></li>
+            {% if user.is_authenticated  %}
+            <div class="dropdown">
+                <span class="li2 a" style="text-transform: uppercase;">{{request.user}}</span>
+                <div class="dropdown-content">
+                  <p><a href="/auth/logout">Logout</a></p>
+                </div>
+              </div>
+              {% else %}
+              <div class="dropdown">
+                <span class="li2 a">MORE</span>
+                <div class="dropdown-content">
+                  <p><a href="/login">Login</a></p><hr>
+                  <p><a href="/signup">SignUp</a></p>
+                </div>
+              </div>
+            {% endif %}
             <li class="li2"><a class="a" href="/contact">CONTACT US</a></li>             
             <li class="li2"><a class="a" href="https://patreon.com/join/OpenSourceGames" target="_blank">PREMIUM</a></li>
                

@@ -283,8 +283,8 @@
 
         <div class="game flex-column">
             <div class="scoreboard">
-                <div class="player1">Player 1:  </div>
-                <div class="player2">Player 2: </div>
+                <div class="player1"><u>Player 1</u></div>
+                <div class="player2"><u>Player 2</u></div>
             </div>
             <div class="boardcontainer">
                 <div class="board">
@@ -319,7 +319,8 @@
         var player = username.charAt(0)
         let resetbtn = document.getElementById("resetbtn")
         let reseted = document.getElementById("reseted")
-          
+
+
         function reload() {
             window.location.reload()
         }
@@ -343,8 +344,8 @@
                 if (game != "") {
                     count++;
                 }
-            resetbtn.style.display = "block";
-            reseted.style.display = "block";    
+                resetbtn.style.display = "block";
+                reseted.style.display = "block";
             })
 
             if (count >= 9) {
@@ -429,6 +430,7 @@
             var data = { 'player': player }
             socket.send(JSON.stringify({ data }))
             swal("Good job!", "You are Connected. Ask opponent for his connection", "success")
+
         }
 
         socket.onmessage = function (e) {

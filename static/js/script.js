@@ -18,3 +18,4 @@ function hidealert(){
   alert.remove()
   
 }
+
