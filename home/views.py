@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from home.models import *
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages 
 # Create your views here.
 
@@ -12,6 +13,7 @@ def about(request):
 def game(request):
     return render(request, 'homepage/game.html')    
 
+@login_required(login_url="/login")
 def contact(request):
   if request.method == "POST":
         name= request.POST['name']
