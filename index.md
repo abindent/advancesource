@@ -1,12 +1,12 @@
-## Welcome to GitHub Pages
+## Welcome to AdvanceSource
 
-You can use the [editor on GitHub](https://github.com/abindent/advancesource/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+You can download the source code and can build your own django multiplayer games site template but in order to host you need to purchase reddis sever.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is a free website template for all of you and you can commit changes into it in order to build your site. This site is built by [OpenSource](https://osourcegames.firebaseapp.com)
 
-### Markdown
+### AdvanceSource
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Advancesource is a new project where we have tried to implement some of our ideas and to make them public so that they can modify or enhance it to the next level.
 
 ```markdown
 Syntax highlighted code block
