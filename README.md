@@ -16,7 +16,7 @@ Advancesource is a new project where we have tried to implement some of our idea
 ## For ssh run:
                     `git clone git@github.com:abindent/advancesource.git `
 
-# Dependencies
+# Installing Dependencies
                     `pip install -r requirements.txt`
                     `pip install pipenv `
                     `pipenv lock`
