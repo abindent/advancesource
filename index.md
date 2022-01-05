@@ -8,31 +8,26 @@ This is a free website template for all of you and you can commit changes into i
 
 Advancesource is a new project where we have tried to implement some of our ideas and to make them public so that they can modify or enhance it to the next level.
 
-```markdown
-Here are some steps you have to follow to run this app in your local computer
+```Here are some steps you have to follow to run this app in your local computer
 
 # Cloning Repository
-##If you are not using ssh run:```
+##If you are not using ssh run
                     `git clone https://github.com/abindent/advancesource.git`
-```markdown
-## For ssh run:```
+## For ssh run:
                     `git clone git@github.com:abindent/advancesource.git `
 
-```markdown
-# Dependencies```
+# Installing Dependencies
                     `pip install -r requirements.txt`
                     `pip install pipenv `
                     `pipenv lock`
                     
-```markdown
-# Installing Reddis Server ```
- 1. Officially download from [here](https://redis.io/download).
- 2. To install redis  in windows refer to [this](https://redis.com/ebook/appendix-a/a-3-installing-on-windows/a-3-2-installing-redis-on-window/) documentation.
- 3. To download redis msi for macOS, Windows and Ubuntu refer to [this](https://www.kindacode.com/article/how-to-install-redis-on-macos-windows-and-ubuntu/) documentation.
+# Installing Reddis Server 
+ 1. Officially download from https://redis.io/download.
+ 2. To install redis  in windows refer to https://redis.com/ebook/appendix-a/a-3-installing-on-windows/a-3-2-installing-redis-on-window .
+ 3. To download redis msi for macOS, Windows and Ubuntu refer to https://www.kindacode.com/article/how-to-install-redis-on-macos-windows-and-ubuntu .
 
-```markdown
 # Run the code
-To start the app open in terminal and type python manage.py runserver
+To start the app open in terminal and type `python manage.py runserver`
 
 ```
 
