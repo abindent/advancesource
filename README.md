@@ -9,29 +9,36 @@ This is a free website template for all of you and you can commit changes into i
 Advancesource is a new project where we have tried to implement some of our ideas and to make them public so that they can modify or enhance it to the next level.
 
 ```markdown
-Syntax highlighted code block
+Here are some steps you have to follow to run this app in your local computer
 
-# Header 1
-## Header 2
-### Header 3
+# Cloning Repository
+##If you are not using ssh run:```
+                    `git clone https://github.com/abindent/advancesource.git`
+```markdown
+## For ssh run:```
+                    `git clone git@github.com:abindent/advancesource.git `
 
-- Bulleted
-- List
+```markdown
+# Dependencies```
+                    `pip install -r requirements.txt`
+                    `pip install pipenv `
+                    `pipenv lock`
+                    
+```markdown
+# Installing Reddis Server ```
+ 1. Officially download from [here](https://redis.io/download).
+ 2. To install redis  in windows refer to [this](https://redis.com/ebook/appendix-a/a-3-installing-on-windows/a-3-2-installing-redis-on-window/) documentation.
+ 3. To download redis msi for macOS, Windows and Ubuntu refer to [this](https://www.kindacode.com/article/how-to-install-redis-on-macos-windows-and-ubuntu/) documentation.
 
-1. Numbered
-2. List
+```markdown
+# Run the code
+To start the app open in terminal and type python manage.py runserver
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/abindent/advancesource/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+For support [click here](mailto:owner.jzsculture.smaitra@gmail.com)
