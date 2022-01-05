@@ -11,7 +11,7 @@ Advancesource is a new project where we have tried to implement some of our idea
 ```Here are some steps you have to follow to run this app in your local computer
 
 # Cloning Repository
-##If you are not using ssh run:```
+##If you are not using ssh run
                     `git clone https://github.com/abindent/advancesource.git`
 ## For ssh run:
                     `git clone git@github.com:abindent/advancesource.git `
