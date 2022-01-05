@@ -13,22 +13,21 @@ Advancesource is a new project where we have tried to implement some of our idea
 # Cloning Repository
 ##If you are not using ssh run:```
                     `git clone https://github.com/abindent/advancesource.git`
-```## For ssh run:```
+## For ssh run:
                     `git clone git@github.com:abindent/advancesource.git `
 
-```# Dependencies```
+# Dependencies
                     `pip install -r requirements.txt`
                     `pip install pipenv `
                     `pipenv lock`
                     
-```markdown
-# Installing Reddis Server ```
- 1. Officially download from [here](https://redis.io/download).
- 2. To install redis  in windows refer to [this](https://redis.com/ebook/appendix-a/a-3-installing-on-windows/a-3-2-installing-redis-on-window/) documentation.
- 3. To download redis msi for macOS, Windows and Ubuntu refer to [this](https://www.kindacode.com/article/how-to-install-redis-on-macos-windows-and-ubuntu/) documentation.
+# Installing Reddis Server 
+ 1. Officially download from https://redis.io/download.
+ 2. To install redis  in windows refer to https://redis.com/ebook/appendix-a/a-3-installing-on-windows/a-3-2-installing-redis-on-window .
+ 3. To download redis msi for macOS, Windows and Ubuntu refer to https://www.kindacode.com/article/how-to-install-redis-on-macos-windows-and-ubuntu .
 
-```# Run the code
-To start the app open in terminal and type python manage.py runserver
+# Run the code
+To start the app open in terminal and type `python manage.py runserver`
 
 ```
 
