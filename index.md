@@ -19,8 +19,8 @@ Here are some steps you have to follow to run this app in your local computer
 
 # Installing Dependencies
                     `pip install -r requirements.txt`
-                    `pip install pipenv `
-                    `pipenv lock`
+                    `pip install pipenv`(If you want a virtual environment)
+                    `pipenv install -r requirements.txt(If you have cloned our repository and installed pipenv)`
                     
 # Installing Reddis Server 
  1. Officially download from https://redis.io/download.
@@ -32,9 +32,9 @@ To start the app open in terminal and type `python manage.py runserver`
 
 ```
 
-### Jekyll Themes
+### Jekyll Themes Copyright
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/abindent/advancesource/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+This page used Jekyll Themes.
 
 ### Support or Contact
-For support [click here](mailto:owner.jzsculture.smaitra@gmail.com)
+For support create an issue in the github repo.
