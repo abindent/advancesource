@@ -19,12 +19,12 @@ Here are some steps you have to follow to run this app in your local computer
 
 # Installing Dependencies
                     `pip install -r requirements.txt`
-                    `pip install pipenv`(If you want a virtual environment)
-                    `pipenv install -r requirements.txt(If you have cloned our repository and installed pipenv)`
+                    `pip install pipenv (If you want a virtual environment)`
+                    `pipenv install -r requirements.txt (If you have cloned our repository and installed pipenv)`
                     
-# Installing Reddis Server 
+# Installing Redis Server 
  1. Officially download from https://redis.io/download.
- 2. To install redis  in windows refer to https://redis.com/ebook/appendix-a/a-3-installing-on-windows/a-3-2-installing-redis-on-window .
+ 2. To install redis in windows refer to https://redis.com/ebook/appendix-a/a-3-installing-on-windows/a-3-2-installing-redis-on-window .
  3. To download redis msi for macOS, Windows and Ubuntu refer to https://www.kindacode.com/article/how-to-install-redis-on-macos-windows-and-ubuntu .
 
 # Run the code
