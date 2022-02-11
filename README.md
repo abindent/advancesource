@@ -24,8 +24,8 @@ Here are some steps you have to follow to run this app in your local computer
                     
 # Installing Redis Server 
  1. Officially download from https://redis.io/download.
- 2. To install redis in windows refer to https://redis.com/ebook/appendix-a/a-3-installing-on-windows/a-3-2-installing-redis-on-window .
- 3. To download redis msi for macOS, Windows and Ubuntu refer to https://www.kindacode.com/article/how-to-install-redis-on-macos-windows-and-ubuntu .
+ 2. Download redis in windows from here https://github.com/tporadowski/redis/releases .
+ 3. To download redis msi for macOS, and Linux (Ubuntu) refer to https://www.kindacode.com/article/how-to-install-redis-on-macos-windows-and-ubuntu .
 
 # Run the code
 To start the app open in terminal and type `python manage.py runserver`
