@@ -27,7 +27,15 @@ Here are some steps you have to follow to run this app in your local computer
 2. Download redis in windows from here https://github.com/tporadowski/redis/releases .
 3. To download redis msi for macOS, and Linux (Ubuntu) refer to https://www.kindacode.com/article/how-to-install-redis-on-macos-windows-and-ubuntu .
 # Run the code
-To start the app open in terminal and type `python manage.py runserver`
+To start the app open in terminal and type ( [host:port] is optional )
+                    `python manage.py runserver [host:port]`
+If you are using virtual environment then run the same code by using virtual env shell.
+
+If using pipenv follow the followings
+                    `pipenv shell` and then `python manage.py runserver [host:port]` or
+                    `pipenv run python manage.py runserver [host:port]` (e.g. pipenv run python manage.py runserver 0.0.0.0:3000)
+
+
 
 ```
 
