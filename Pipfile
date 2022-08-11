@@ -9,7 +9,7 @@ whitenoise = "*"
 psycopg2 = "*"
 pillow = "*"
 dj-database-url = "*"
-django = "==3.2.11"
+django = "==3.2.15"
 channels = "*"
 channels-redis = "*"
 
